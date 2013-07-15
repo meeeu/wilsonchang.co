@@ -1,0 +1,151 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<title>www:~ Wilson$</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="Wilson Chang professional software engineer full stack front back end web developer" name="description">
+	<meta content="Wilson Chang" name="author">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="css/flat-ui.css">
+	<style>
+	  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+	  	border-radius: 0px;
+	  }
+	  ul { margin-bottom: 0px; }
+	  .table th { vertical-align: middle; }
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+	<script>
+		if (window.location.hash == '#_=_')
+	        window.location.hash = ''
+	        history.pushState('', document.title, window.location.pathname)
+	</script>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+	    <div class="container">
+	      <button data-target="#nav-collapse-01" data-toggle="collapse" class="btn btn-navbar" type="button"></button>
+	      <span class="brand">~Wilson$</span>
+	      <div id="nav-collapse-01" class="nav-collapse collapse">
+	        <ul class="nav">
+	          <li class="active">
+	            <a href="#">
+	              Software Engineer
+	              <span class="navbar-unread">1</span>
+	            </a>
+	          </li>
+	        </ul>
+	      </div><!--/.nav -->
+	    </div>
+	  </div>
+	</div>
+	<div class="container">
+		<div class="hero-unit">
+			<h3>Hello World,</h3>
+			<div class="lead">
+				<p>I am a software engineer with a passion for web development and enthusiastic about start up culture around the world.  My current location is in Los Angeles and I would like to connect with you.</p>
+				<p>Best wishes,</p>
+				<p>-Wilson</p>
+			</div>
+		</div>
+		<div class="hero-unit">
+			<h4>My Favorite Technology:</h4>
+			<div class="row lead">
+				<div class="span3">
+					<ul>
+						<li>
+							<a target="_blank" href="http://nodejs.org/">
+								node.js
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://expressjs.com/">
+								express
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.mongodb.org/">
+								mongodb
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="span3">
+					<ul>
+						<li>
+							<a target="_blank" href="http://twitter.github.io/bootstrap/">
+								twitter bootstrap
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://backbonejs.org/">
+								backbone
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://redis.io/">
+								redis
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="span3">
+					<ul>
+						<li>
+							<a target="_blank" href="http://www.opscode.com/chef/">
+								chef
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.postgresql.org/">
+								postgres
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.python.org/">
+								python
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="hero-unit span2">
+				<h4>Connect with me.</h4>
+				<ul class="lead">
+					<li>
+						<a target="_blank" href="http://www.linkedin.com/pub/wilson-chang/9/977/b61">
+							Linkedin
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/meeeu">
+							Github
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="hero-unit span7">
+				<h4>Sign my guest book.</h4>
+				<a class="lead" href="/auth/facebook">Sign with Facebook</a>
+				<table class="table table-hover table-condensed">
+					<tbody>
+						<% for (i in guests) { %>
+							<th><img src='<%= guests[i].user.picture.data.url %>'</th>
+							<th valign=middle><%= guests[i].user.first_name %></th>
+							<th>was here</th>
+							<th class="date"><%= guests[i].date %></th>
+						<% } %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script rel="javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
