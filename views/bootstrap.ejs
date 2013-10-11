@@ -49,6 +49,12 @@
 				<p>I am a software engineer with a passion for web development and enthusiastic about start up culture around the world.  My current location is in Los Angeles and I would like to connect with you.</p>
 				<p>Best wishes,</p>
 				<p>-Wilson</p>
+				<p>P.S. This page is built on some of my favorite technologies.  It is open sourced for you to use on my
+					<a target="_blank" href="https://github.com/meeeu/wilsonchang.co">
+						GitHub
+					</a>
+					.
+				</p>
 			</div>
 		</div>
 		<div class="hero-unit">
@@ -135,10 +141,12 @@
 				<table class="table table-hover table-condensed">
 					<tbody>
 						<% for (i in guests) { %>
+							<tr>
 							<th><img src='<%= guests[i].user.picture.data.url %>'</th>
 							<th valign=middle><%= guests[i].user.first_name %></th>
 							<th>was here</th>
 							<th class="date"><%= guests[i].date %></th>
+							</tr>
 						<% } %>
 					</tbody>
 				</table>
