@@ -10,7 +10,8 @@ var express  = require('express')
   , path     = require('path')
   , config   = require('./config')
   , graph    = require('fbgraph') // fb app 
-  , mongoose = require('mongoose'); // mongodb
+  , mongoose = require('mongoose') // mongodb
+  , moment   = require('moment');
 
 mongoose.connect(config.mongolab); // connection to mongolab
 // mongo USER schema
@@ -58,6 +59,10 @@ app.get('/', function (req, res) {
   User.find(function(err, user) {
     res.render('bootstrap', { guests: user });
   });
+});
+
+app.get('/resume', function (req, res) {
+  res.render('resume');
 });
 
 /**
