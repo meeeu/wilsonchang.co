@@ -1,3 +1,32 @@
+.background:before {
+    animation-duration: 80s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: masthead;
+    animation-timing-function: linear;
+    background: url("http://semantic-ui.com/images/tile-bg.png") repeat fixed 0 0 #00B5AD;
+    content: "";
+    height: 500%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 50% 0;
+    width: 500%;
+    z-index: -1;
+}
+
+@-moz-keyframes masthead {
+0% {
+    background-position: 0 0;
+}
+50% {
+    background-position: -50% -100%;
+}
+100% {
+    background-position: -100% -200%;
+}
+}
+
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
 @font-face {
   font-family: 'Flat-UI-Icons';
