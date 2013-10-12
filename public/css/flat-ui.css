@@ -2,7 +2,7 @@
     animation-duration: 80s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-name: masthead;
+    animation-name: background;
     animation-timing-function: linear;
     background: url("http://semantic-ui.com/images/tile-bg.png") repeat fixed 0 0 #00B5AD;
     content: "";
@@ -15,7 +15,34 @@
     z-index: -1;
 }
 
-@-moz-keyframes masthead {
+@-moz-keyframes background {
+0% {
+    background-position: 0 0;
+}
+50% {
+    background-position: -50% -100%;
+}
+100% {
+    background-position: -100% -200%;
+}
+}
+
+
+@keyframes background
+{
+0% {
+    background-position: 0 0;
+}
+50% {
+    background-position: -50% -100%;
+}
+100% {
+    background-position: -100% -200%;
+}
+}
+
+@-webkit-keyframes background /* Safari and Chrome */
+{
 0% {
     background-position: 0 0;
 }
