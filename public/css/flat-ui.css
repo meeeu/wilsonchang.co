@@ -2,20 +2,51 @@ body {
   overflow-x:hidden;
 }
 .background:before {
-    animation-duration: 80s;
+
     animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-name: background;
-    animation-timing-function: linear;
+
+
+
     background: url("http://semantic-ui.com/images/tile-bg.png") repeat fixed 0 0 #00B5AD;
     content: "";
-    height: 500%;
+    height: 150%;
     left: 0;
     position: absolute;
     top: 0;
-    transform-origin: 50% 50% 0;
-    width: 500%;
+
+    width: 100%;
     z-index: -1;
+
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  -webkit-animation-name: background;
+  -moz-animation-name: background;
+  -o-animation-name: background;
+  animation-name: background;
+
+  -webkit-animation-duration: 80s;
+  -moz-animation-duration: 80s;
+  -ms-animation-duration: 80s;
+  -o-animation-duration: 80s;
+  animation-duration: 80s;
+
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @-moz-keyframes background {
@@ -47,7 +78,7 @@ body {
 @-webkit-keyframes background /* Safari and Chrome */
 {
 0% {
-    background-position: 0 0;
+    background-position: 0% 0%;
 }
 50% {
     background-position: -50% -100%;
