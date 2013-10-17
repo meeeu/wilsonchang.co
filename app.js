@@ -65,6 +65,10 @@ app.get('/resume', function (req, res) {
   res.render('resume');
 });
 
+app.get('/hobbies', function (req, res) {
+  res.render('hobbies');
+});
+
 /**
  * Connect to FB and mine user data
  */
