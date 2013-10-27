@@ -65,14 +65,6 @@ app.get('/resume', function (req, res) {
   res.render('resume');
 });
 
-app.get('/resume/download/doc', function (req, res) {
-  res.download(__dirname + '/public/Resume for Wilson Chang-1.doc');
-});
-
-app.get('/resume/download/pdf', function (req, res) {
-  res.download(__dirname + '/public/Resume for Wilson Chang-1.pdf');
-});
-
 app.get('/hobbies', function (req, res) {
   res.render('hobbies');
 });
